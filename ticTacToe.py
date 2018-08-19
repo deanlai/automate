@@ -1,6 +1,7 @@
-theBoard = {'TL': ' ', 'TM':' ', 'TR': ' ',
-            'ML': ' ', 'MM':' ', 'MR': ' ',
-            'LL': ' ', 'LM':' ', 'LR': ' '}
+theBoard = {'TL': ' ', 'TM': ' ', 'TR': ' ',
+            'ML': ' ', 'MM': ' ', 'MR': ' ',
+            'LL': ' ', 'LM': ' ', 'LR': ' '}
+
 
 def printBoard(board):
     print(' ' + board['TL'] + ' | ' + board['TM'] + ' | ' + board['TR'] + ' ')
@@ -8,6 +9,7 @@ def printBoard(board):
     print(' ' + board['ML'] + ' | ' + board['MM'] + ' | ' + board['MR'] + ' ')
     print('---+---+---')
     print(' ' + board['LL'] + ' | ' + board['LM'] + ' | ' + board['LR'] + ' ')
+
 
 turn = 'X'
 for i in range(9):
