@@ -2,7 +2,9 @@ tableData = [['apples', 'oranges', 'cherries', 'banana'],
              ['Alice', 'Bob', 'Carol', 'David'],
              ['dogs', 'cats', 'moose', 'goose']]
 
-#check for longest word
+# check for longest word
+
+
 def longestWord(table):
     longest = 0
     for i in table:
@@ -11,7 +13,9 @@ def longestWord(table):
                 longest = len(k)
     return longest
 
+
 colWidth = longestWord(tableData)
+
 
 def displayTable(tableData):
     numCols = len(tableData)
@@ -22,5 +26,6 @@ def displayTable(tableData):
             tableString += tableData[col][row].rjust(colWidth + 1)
         tableString += '\n'
     print(tableString)
+
 
 displayTable(tableData)
